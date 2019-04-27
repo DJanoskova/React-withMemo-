@@ -1,6 +1,6 @@
-# withmemo()
+# withMemo(Component, checkedProps)
 
-Update a component only if a certain prop changes with using `withMemo(Component, checkedProps)` hoc.
+Update a component only if a certain prop changes with using `withMemo()` hoc.
 
 ### Usage
 
