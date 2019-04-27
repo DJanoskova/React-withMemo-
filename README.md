@@ -1,6 +1,7 @@
 # withMemo(Component, checkedProps)
 
 Update a component only if a certain prop changes with using `withMemo()` hoc.
+Of course you can pass multiple props.
 
 ### Usage
 
