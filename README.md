@@ -17,3 +17,28 @@ export default withMemo(MemberRow, ['member']);
 
 ```
 (re-render only if the `member` prop changes)
+
+---
+
+If you want to always return *true* (for example for a layout wrapper you don't ever want to re-render), just pass an empty array of props like so
+```
+import React from 'react';
+import withMemo from './withMemo';
+
+const Layout = () => {
+  // this layout is getting a history prop from the router although we're not using it 
+  // which would cause many re-renders
+  
+  return (
+    <>
+      <Header />
+      <Switch>
+        <Route path="/members" component={Members} />
+      </Switch>
+    </>
+  )
+};
+
+export default withMemo(Layout, []);
+
+```
