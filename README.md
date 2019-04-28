@@ -26,8 +26,9 @@ import React from 'react';
 import withMemo from './withMemo';
 
 const Layout = () => {
-  // this layout is getting a history prop from the router although we're not using it 
-  // which would cause many re-renders
+  // this layout is getting a history prop from the router
+  // although we're not using it 
+  // which causes many re-renders
   
   return (
     <>
