@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 const withMemo = (Component, checkedProps) => {
   function areEqual(prevProps, nextProps) {
